@@ -27,7 +27,7 @@
 
         <DataGrid Grid.Column="1" ItemsSource="{Binding ListOfStocks}" SelectedItem="{Binding SelectedTickerValue}" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название Компании" MinWidth="200" Width="Auto" Binding="{Binding CompanyName}"/>
+                <DataGridTextColumn Header="Название Компании" MinWidth="200" Width="*" Binding="{Binding CompanyName}"/>
                 <DataGridTextColumn Header="Доходность" Binding="{Binding Profit}"/>
                 <DataGridTextColumn Header="Нижняя цена" Binding="{Binding MinCost}"/>
                 <DataGridTextColumn Header="Верхняя цена" Binding="{Binding MaxCost}"/>
